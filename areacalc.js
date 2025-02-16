@@ -1,4 +1,4 @@
-var choice = prompt("Welcome to area calculator. \n Please  enter your choice. \n1.Area of a rectangle. \n2. Area of a triangle. \n3. Area of a circle. \n4.Area of a parallelogram. ");
+var choice = prompt("Welcome to area calculator. \n Please  enter your choice. \n1.Area of a rectangle. \n2. Area of a triangle. \n3. Area of a circle. \n4.Area of a parallelogram. \n5. Area of a square. ");
 
 if (choice == '1') {
     var l = prompt('Enter the length.')
@@ -22,4 +22,9 @@ if (choice == '4') {
     var cb = prompt('Enter the corresponding base.')
     var result = Number(h) * Number(cb)
     alert('The area is ' + result)
+}
+if (choice == '5') {
+    var s = prompt('Enter the side')
+    var result = Number(s)*Number(s)
+    alert('The area is' + result)
 }
